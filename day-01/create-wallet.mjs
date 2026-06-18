@@ -24,7 +24,7 @@ import {
 } from "@solana/kit";
 
 const rpc = createSolanaRpc(devnet("https://api.devnet.solana.com"));
-const walletAddress = await address('GmLZV9UifsM6wVUYBcLPoNhrArXKCbqKAdwyhqjhWxny');
+const walletAddress = await address('6j9GyMtbD7zv8nCkC3cgN9Ra6UAubvkHQYwXao12hoeP');
 
 console.log("Wallet address:", walletAddress);
 console.log("\n--- Go to https://faucet.solana.com/ and airdrop SOL to this address ---");

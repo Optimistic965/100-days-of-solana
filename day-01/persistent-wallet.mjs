@@ -14,7 +14,7 @@ async function loadOrCreateWallet () {
     try {
         const data = JSON.parse(await readFile(WALLET_FILE, "utf-8"))
         const secretBytes = new Uint8Array(data.secretKey)
-        const wallet = createKeyPairSignerFromBytes(secretBytes)
+        const wallet = await createKeyPairSignerFromBytes(secretBytes)
 
         console.log("Loaded wallet", wallet.address)
 
